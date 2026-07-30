@@ -1,167 +1,378 @@
 <!DOCTYPE html>
-<html lang="bn">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Abesh Lifestyle Official Website</title>
+<title>Abesh Lifestyle</title>
 
 <style>
-body{
+
+*{
 margin:0;
+padding:0;
+box-sizing:border-box;
 font-family:Arial,sans-serif;
-color:#111;
+}
+
+body{
+background:#050505;
+color:white;
 }
 
 header{
 background:#000;
-color:white;
 text-align:center;
 padding:30px;
+border-bottom:2px solid #c9a227;
 }
 
+
+/* Premium AL Logo */
+
 .logo{
-font-size:40px;
+width:100px;
+height:100px;
+margin:auto;
+border:3px solid #c9a227;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:45px;
+font-weight:bold;
+color:#c9a227;
+background:#111;
+box-shadow:0 0 25px #c9a227;
+}
+
+
+header h1{
+margin-top:20px;
+font-size:36px;
+color:#c9a227;
+}
+
+
+header p{
+color:#ddd;
+}
+
+
+nav{
+background:#111;
+padding:15px;
+text-align:center;
+}
+
+
+nav a{
+color:#c9a227;
+text-decoration:none;
+margin:15px;
 font-weight:bold;
 }
 
-header h1{
-margin:10px 0;
-}
 
-.banner{
-background:#eee;
+.hero{
+height:500px;
+display:flex;
+align-items:center;
+justify-content:center;
 text-align:center;
-padding:60px 20px;
+padding:20px;
+background:
+linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.8)),
+url('banner.jpg');
+
+background-size:cover;
+background-position:center;
 }
 
-.banner h2{
-font-size:35px;
+
+.hero h2{
+font-size:45px;
+color:#c9a227;
 }
+
+
+.hero p{
+font-size:20px;
+margin:20px;
+}
+
 
 .btn{
 display:inline-block;
-background:#000;
-color:white;
-padding:12px 25px;
-border-radius:25px;
+background:#c9a227;
+color:#000;
+padding:15px 35px;
+border-radius:30px;
 text-decoration:none;
+font-weight:bold;
 }
 
-.products{
+
+.section{
+padding:50px 20px;
 text-align:center;
-padding:30px;
 }
+
+
+.title{
+font-size:35px;
+color:#c9a227;
+margin-bottom:30px;
+}
+.products{
+padding:50px 20px;
+text-align:center;
+}
+
 
 .card{
 display:inline-block;
-width:220px;
-margin:10px;
-padding:20px;
-border:1px solid #ddd;
+width:260px;
+background:#111;
+border:1px solid #c9a227;
 border-radius:15px;
+padding:20px;
+margin:15px;
 }
 
+
 .card img{
-width:180px;
-height:180px;
+width:200px;
+height:200px;
 object-fit:cover;
 border-radius:10px;
 }
 
+
+.card h3{
+margin:15px 0;
+color:#fff;
+}
+
+
+.price{
+color:#c9a227;
+font-size:22px;
+font-weight:bold;
+margin:15px;
+}
+
+
 .about{
 background:#111;
-color:white;
-padding:40px;
+padding:50px 20px;
 text-align:center;
 }
+
+
+.about h2{
+color:#c9a227;
+margin-bottom:15px;
+}
+
 
 .contact{
+padding:50px 20px;
 text-align:center;
-padding:40px;
 }
 
-.whatsapp{
-background:green;
-color:white;
-padding:15px 25px;
-border-radius:25px;
-text-decoration:none;
+
+.contact h2{
+color:#c9a227;
 }
+
+
+.whatsapp{
+display:inline-block;
+margin-top:20px;
+background:#25D366;
+color:white;
+padding:15px 35px;
+border-radius:30px;
+text-decoration:none;
+font-weight:bold;
+}
+
 
 footer{
 background:#000;
-color:white;
+border-top:2px solid #c9a227;
 text-align:center;
-padding:15px;
+padding:25px;
+color:#c9a227;
 }
+
+
 </style>
 
 </head>
 
 <body>
 
+
 <header>
-<div class="logo">AL</div>
+
+<div class="logo">
+AL
+</div>
+
 <h1>Abesh Lifestyle</h1>
-<p>Official Fashion Brand</p>
+
+<p>Premium Fashion Brand</p>
+
 </header>
 
 
-<section class="banner">
-<h2>Style Your Life</h2>
-<p>Premium T-Shirt, Shirt & Pant Collection</p>
-<a class="btn" href="#">Explore</a>
+
+<nav>
+
+<a href="#">Home</a>
+<a href="#collection">Collection</a>
+<a href="#contact">Contact</a>
+
+</nav>
+
+
+
+<section class="hero">
+
+<div>
+
+<h2>Style Your Lifestyle</h2>
+
+<p>Luxury Fashion Collection</p>
+
+<a class="btn" href="#collection">
+Explore Collection
+</a>
+
+</div>
+
 </section>
 
 
-<section class="products">
 
-<h2>Our Products</h2>
+<section class="products section" id="collection">
+
+<h2 class="title">
+Our Collection
+</h2>
+
+
 
 <div class="card">
+
 <img src="tshirt.jpg">
-<h3>T-Shirt</h3>
-<p>Premium Quality</p>
-<a class="btn" href="#">Order</a>
+
+<h3>Premium T-Shirt</h3>
+
+<p class="price">
+৳ 599
+</p>
+
+<a class="btn" href="https://wa.me/8801799752120">
+Order Now
+</a>
+
 </div>
 
+
+
 <div class="card">
+
 <img src="shirt.jpg">
-<h3>Shirt</h3>
-<p>Modern Design</p>
-<a class="btn" href="#">Order</a>
+
+<h3>Luxury Shirt</h3>
+
+<p class="price">
+৳ 999
+</p>
+
+<a class="btn" href="https://wa.me/8801799752120">
+Order Now
+</a>
+
 </div>
 
+
+
 <div class="card">
+
 <img src="pant.jpg">
-<h3>Pant</h3>
-<p>Stylish Collection</p>
-<a class="btn" href="#">Order</a>
+
+<h3>Premium Pant</h3>
+
+<p class="price">
+৳ 1199
+</p>
+
+<a class="btn" href="https://wa.me/8801799752120">
+Order Now
+</a>
+
 </div>
+
 
 </section>
+
 
 
 <section class="about">
-<h2>About Abesh Lifestyle</h2>
-<p>Premium fashion with modern style and quality.</p>
+
+<h2>
+About Abesh Lifestyle
+</h2>
+
+<p>
+Premium fashion with modern style and quality.
+</p>
+
 </section>
 
 
-<section class="contact">
-<h2>Order Now</h2>
-<p>Contact us for purchase</p>
+
+<section class="contact" id="contact">
+
+<h2>
+Contact Us
+</h2>
+
 <br>
-<a class="whatsapp" href="#">WhatsApp Order</a>
+
+<p>📍 Faoi Bazar, Maizkhar, Chandina, Cumilla</p>
+
+<p>📱 01799752120</p>
+
+<p>📧 aabeshlifestyle@gmail.com</p>
+
+<p>🚚 Delivery: All Over Bangladesh</p>
+
+
+<a class="whatsapp" href="https://wa.me/8801799752120">
+WhatsApp Order
+</a>
+
+
 </section>
+
 
 
 <footer>
+
 © 2026 Abesh Lifestyle
+
 <br>
-Official Website
+
+Premium Fashion Brand
+
 </footer>
 
+
 </body>
+
 </html>
